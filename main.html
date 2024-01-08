@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore The World</title>
+    <link rel="shortcut icon" href="images.ico" type="image/x-icon">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.2rem;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right,#282828,#e0eee5);
+}
+
+.left-text{
+    flex-basis: 30%;
+}
+  
+.gallery{
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3 1fr);
+    grid-auto-rows: 120px;
+   
+    
+}
+
+.heading{
+    font-size: 3rem;
+    color: white;
+   text-align:center;
+}
+
+.sub-heading{
+    color: #ddd;
+    margin: 10px;
+    text-align: center;
+}
+
+.box{
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background-blend-mode:hard-light;
+    transition: all 1s ease-in-out;
+}
+
+.box:hover{
+    background-position: center;
+    background-color: #999;
+    box-shadow:0 0 4px white ;
+    cursor: pointer;
+}
+
+.col-1{
+    grid-column: span 2 ;
+}
+
+.row-2{
+    grid-row: span 2;
+}
+
+.footer>p{
+    font-size: larger;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer>h4{
+    font-size: large;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer{
+    background: linear-gradient(to right,#282828,#e0eee5);
+   
+    
+}
+
+
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-text">
+            <h2 class="heading">Beautifull World</h2>
+            <p class="sub-heading">You are glad to see this beautifull world. So why are you waiting. Let's explore the best places to travel in the world that makes your memoreble.</p>
+        </div>
+        <div class="gallery">
+            <div class="box col-1 mountains" style="background-image: url(mountain.jpeg); margin-left: 220px;"><a href="mountains.html" target="_blank" style="color: white;">Mountains</div></a>
+            <div class="box col-1 beaches " style="background-image: url(beache.jpeg);margin-right: 220px;"><a href="beaches.html" target="_blank" style="color: white;">Beaches</div></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Choose the place which you want to visit Mountains/Beaches</p>
+        <h4>Click the image of Mountains/Beaches </h4>
+    </div>
+
+    
+</body>
+</html>
